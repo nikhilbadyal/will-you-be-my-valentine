@@ -1,6 +1,6 @@
 # Will you be my valentine?
 
-Demo : https://nikhilbadyal.github.io/will-you-be-my-valentine/
+Demo : http://valentine.nikhilbadyal.com/
 
 This is a fun project for valentines day to bring smile on face of your special person!!
 
