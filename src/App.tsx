@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import Confetti from "react-confetti";
+
+// Use JSDelivr URLs as you originally intended
 import ask from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/ask.gif';
 import gif1 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif1.gif';
 import gif2 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif2.gif';
@@ -16,7 +18,6 @@ import gif12 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valen
 import gif13 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif13.gif';
 import gif14 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif14.gif';
 import celebrationGif from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/celebration.gif';
-
 
 export default function Page() {
   const [noCount, setNoCount] = useState(0);
@@ -52,7 +53,11 @@ export default function Page() {
       {yesPressed && <Confetti />}
       {yesPressed ? (
         <>
-          <img src={celebrationGif} alt="Celebration GIF" className="animated-gif" />
+          <img
+            src={celebrationGif}
+            alt="Celebration GIF"
+            className="animated-gif"
+          />
           <div className="my-4 celebration-text font-bold">
             WOOOOOO!!! I love you {name || 'pookie'}!! ;))
           </div>
@@ -66,7 +71,11 @@ export default function Page() {
             onChange={(event) => setName(event.target.value)}
             className="mb-4 px-2 py-1 border rounded"
           />
-          <img className="h-[200px] animated-gif" src={currentOption.gif} alt={currentOption.alt} />
+          <img
+            className="h-[200px] animated-gif"
+            src={currentOption.gif}
+            alt={currentOption.alt}
+          />
           <h1 className="my-4 text-4xl">Will you be my Valentine?</h1>
           <div className="flex items-center">
             <button
