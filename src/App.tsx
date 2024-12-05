@@ -1,21 +1,21 @@
 "use client";
 import { useState } from "react";
 import Confetti from "react-confetti";
-import ask from '/gifs/ask.gif';
-import gif1 from '/gifs/gif1.gif';
-import gif2 from '/gifs/gif2.gif';
-import gif3 from '/gifs/gif3.gif';
-import gif4 from '/gifs/gif4.gif';
-import gif5 from '/gifs/gif5.gif';
-import gif7 from '/gifs/gif7.gif';
-import gif8 from '/gifs/gif8.gif';
-import gif9 from '/gifs/gif9.gif';
-import gif10 from '/gifs/gif10.gif';
-import gif11 from '/gifs/gif11.gif';
-import gif12 from '/gifs/gif12.gif';
-import gif13 from '/gifs/gif13.gif';
-import gif14 from '/gifs/gif14.gif';
-import celebrationGif from '/gifs/celebration.gif';
+import ask from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/ask.gif';
+import gif1 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif1.gif';
+import gif2 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif2.gif';
+import gif3 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif3.gif';
+import gif4 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif4.gif';
+import gif5 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif5.gif';
+import gif7 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif7.gif';
+import gif8 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif8.gif';
+import gif9 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif9.gif';
+import gif10 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif10.gif';
+import gif11 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif11.gif';
+import gif12 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif12.gif';
+import gif13 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif13.gif';
+import gif14 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif14.gif';
+import celebrationGif from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/celebration.gif';
 
 
 export default function Page() {
