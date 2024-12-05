@@ -2,22 +2,6 @@
 import { useState } from "react";
 import Confetti from "react-confetti";
 
-// Use JSDelivr URLs as you originally intended
-import ask from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/ask.gif';
-import gif1 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif1.gif';
-import gif2 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif2.gif';
-import gif3 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif3.gif';
-import gif4 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif4.gif';
-import gif5 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif5.gif';
-import gif7 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif7.gif';
-import gif8 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif8.gif';
-import gif9 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif9.gif';
-import gif10 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif10.gif';
-import gif11 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif11.gif';
-import gif12 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif12.gif';
-import gif13 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif13.gif';
-import gif14 from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif14.gif';
-import celebrationGif from 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/celebration.gif';
 
 export default function Page() {
   const [noCount, setNoCount] = useState(0);
@@ -30,20 +14,20 @@ export default function Page() {
   };
 
   const options = [
-    { message: "No", gif: ask, alt: "Initial asking GIF" },
-    { message: "Really !! No ???", gif: gif1, alt: "GIF showing disbelief" },
-    { message: "Are you sure?", gif: gif2, alt: "GIF asking for confirmation" },
-    { message: "What if I asked really nicely?", gif: gif3, alt: "GIF with a nice plea" },
-    { message: "Pretty please", gif: gif4, alt: "GIF asking nicely" },
-    { message: "With a chocolate rice cake on top", gif: gif5, alt: "GIF with a sweet offer" },
-    { message: "PLEASE POOKIE", gif: gif7, alt: "GIF pleading intensely" },
-    { message: "But :*(", gif: gif8, alt: "Sad GIF" },
-    { message: "I am going to die", gif: gif9, alt: "GIF with a dramatic reaction" },
-    { message: "Yep im dead", gif: gif10, alt: "GIF showing exhaustion" },
-    { message: "ok ur talking to my ghost", gif: gif11, alt: "GIF with a ghostly theme" },
-    { message: "please babe", gif: gif12, alt: "GIF with a heartfelt plea" },
-    { message: ":((((", gif: gif13, alt: "Very sad GIF" },
-    { message: "PRETTY PLEASE", gif: gif14, alt: "GIF with an intense plea" },
+    { message: "No", gif: 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/ask.gif', alt: "Initial asking GIF" },
+    { message: "Really !! No ???", gif: 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif1.gif', alt: "GIF showing disbelief" },
+    { message: "Are you sure?", gif: 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif2.gif', alt: "GIF asking for confirmation" },
+    { message: "What if I asked really nicely?", gif: 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif3.gif', alt: "GIF with a nice plea" },
+    { message: "Pretty please", gif: 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif4.gif', alt: "GIF asking nicely" },
+    { message: "With a chocolate rice cake on top", gif: 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif5.gif', alt: "GIF with a sweet offer" },
+    { message: "PLEASE POOKIE", gif: 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif7.gif', alt: "GIF pleading intensely" },
+    { message: "But :*(", gif: 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif8.gif', alt: "Sad GIF" },
+    { message: "I am going to die", gif: 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif9.gif', alt: "GIF with a dramatic reaction" },
+    { message: "Yep im dead", gif: 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif10.gif', alt: "GIF showing exhaustion" },
+    { message: "ok ur talking to my ghost", gif: 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif11.gif', alt: "GIF with a ghostly theme" },
+    { message: "please babe", gif: 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif12.gif', alt: "GIF with a heartfelt plea" },
+    { message: ":((((", gif: 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif13.gif', alt: "Very sad GIF" },
+    { message: "PRETTY PLEASE", gif: 'https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/gif14.gif', alt: "GIF with an intense plea" },
   ];
 
   const currentOption = options[Math.min(noCount, options.length - 1)];
@@ -54,7 +38,7 @@ export default function Page() {
       {yesPressed ? (
         <>
           <img
-            src={celebrationGif}
+            src='https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/celebration.gif'
             alt="Celebration GIF"
             className="animated-gif"
           />
