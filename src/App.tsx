@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Confetti from "react-confetti";
+import "./App.css";
 
 
 export default function Page() {
@@ -33,51 +34,66 @@ export default function Page() {
   const currentOption = options[Math.min(noCount, options.length - 1)];
 
   return (
-    <div className="-mt-16 flex h-screen flex-col items-center justify-center background">
+    <div className="page">
       {yesPressed && <Confetti />}
-      {yesPressed ? (
-        <>
-          <img
-            src='https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/celebration.gif'
-            alt="Celebration GIF"
-            className="animated-gif"
-          />
-          <div className="my-4 celebration-text font-bold">
-            WOOOOOO!!! I love you {name || 'pookie'}!! ;))
+      <div className="shell">
+        {yesPressed ? (
+          <div className="card celebration">
+            <div className="badge">it's a yes</div>
+            <div className="gif-wrap">
+              <img
+                src="https://cdn.jsdelivr.net/gh/nikhilbadyal/will-you-be-my-valentine@main/public/gifs/celebration.gif"
+                alt="Celebration GIF"
+                className="gif-frame"
+              />
+            </div>
+            <h1 className="title">WOOOOOO!!!</h1>
+            <p className="subtitle celebration-text">
+              I love you {name || "pookie"}!! ;))
+            </p>
           </div>
-        </>
-      ) : (
-        <>
-          <input
-            type="text"
-            placeholder="Your name"
-            value={name}
-            onChange={(event) => setName(event.target.value)}
-            className="mb-4 px-2 py-1 border rounded"
-          />
-          <img
-            className="h-[200px] animated-gif"
-            src={currentOption.gif}
-            alt={currentOption.alt}
-          />
-          <h1 className="my-4 text-4xl">Will you be my Valentine?</h1>
-          <div className="flex items-center">
-            <button
-              className={`mr-4 rounded bg-green-500 px-4 py-2 font-bold text-white hover:bg-green-700`}
-              style={{ fontSize: yesButtonSize }}
-              onClick={() => setYesPressed(true)}
-            >
-              Yes
-            </button>
-            <button
-              onClick={handleNoClick}
-              className="rounded bg-red-500 px-4 py-2 font-bold text-white hover:bg-red-700"
-            >
-              {currentOption.message}
-            </button>
+        ) : (
+          <div className="card">
+            <div className="badge">tiny love note</div>
+            <label className="name-field">
+              <span>Your name</span>
+              <input
+                type="text"
+                placeholder="Type it here"
+                value={name}
+                onChange={(event) => setName(event.target.value)}
+                className="name-input"
+              />
+            </label>
+            <div className="gif-wrap">
+              <img
+                className="gif-frame"
+                src={currentOption.gif}
+                alt={currentOption.alt}
+              />
+            </div>
+            <h1 className="title">Will you be my Valentine?</h1>
+            <p className="subtitle">
+              Answer carefully, the No button is dramatic.
+            </p>
+            <div className="button-row">
+              <button
+                className="yes-button"
+                style={{ fontSize: yesButtonSize }}
+                onClick={() => setYesPressed(true)}
+              >
+                Yes
+              </button>
+              <button
+                onClick={handleNoClick}
+                className="no-button"
+              >
+                {currentOption.message}
+              </button>
+            </div>
           </div>
-        </>
-      )}
+        )}
+      </div>
     </div>
   );
 }
